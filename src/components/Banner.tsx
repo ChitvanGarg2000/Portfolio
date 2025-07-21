@@ -123,7 +123,7 @@ function Banner() {
                     </motion.div>
                     <div className='flex'>
                         <Dialog>
-                            <DialogTrigger>
+                            <DialogTrigger asChild>
                                 <Button className='cursor-pointer bg-yellow-theme flex items-center'>
                                     Get in touch<MdMail size={12} style={{ color: "#fff" }} />
                                 </Button>

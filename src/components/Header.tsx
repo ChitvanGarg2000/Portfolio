@@ -34,7 +34,7 @@ function Header() {
       </div>
 
       {/* Desktop Navigation */}
-      <ul className='hidden sm:flex sm:w-1/2 justify-between items-center'>
+      <ul className='hidden sm:flex sm:w-2/5 justify-between items-center'>
         {navigations.navigations.map(({ name, link }) => (
           <li key={link} className='list-none cursor-pointer hover:text-yellow-theme'>
             <Link href={link}>{name}</Link>
