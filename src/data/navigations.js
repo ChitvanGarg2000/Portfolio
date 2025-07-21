@@ -5,19 +5,19 @@ const data = {
     "navigations": [
         {
             "name": "About us",
-            "link": "/about"
+            "link": "#about"
         },
         {
-            "name": "Projects",
-            "link": "/projects"
+            "name": "Skills",
+            "link": "#skills"
         },
         {
             "name": "Experience",
-            "link": "/experience"
+            "link": "#experience"
         },
         {
-            "name": "Contact us",
-            "link": "/contact"
+            "name": "Contact",
+            "link": "#contact"
         }
     ],
     "socialLinks": [

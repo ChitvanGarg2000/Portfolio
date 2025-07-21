@@ -93,7 +93,7 @@ body, body[data-scroll-locked] {
   color: var(--foreground);
   font-family: 'Poppins', sans-serif;
   padding: 0px 60px !important;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body li a:hover{
@@ -115,6 +115,10 @@ body li a:hover{
   width: 100%;
   min-height: 450px;
   background-image: url('https://portfolio0305.s3.ap-south-1.amazonaws.com/blob.svg');
+}
+
+.custom-progress div[data-slot="progress-indicator"] {
+  background-color: var(--color-yellow-theme) !important;
 }
 
 .dark {
@@ -158,6 +162,6 @@ body li a:hover{
 
 @media screen and (max-width: 768px) {
   body, body[data-scroll-locked]{
-    padding: 0px 48px;
+    padding: 0px 32px !important;
   }
 }
