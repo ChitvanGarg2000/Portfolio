@@ -90,23 +90,10 @@ const skills = {
         }
     ],
     "technologies": [
-    "JavaScript", 
-    "TypeScript", 
-    "React", 
-    "Next.js", 
-    "Redux/toolkit",
-    "Node.js", 
-    "Express",
-    "MongoDB", 
-    "Tailwind CSS", 
-    "Framer Motion", 
-    "Shadcn",
-    "AntD",
-    "Git",
-    "Docker", 
-    "AWS", 
-    "Vercel", 
-    "Contentful"
+    "Weather Forecast App", 
+    "Connect me (Social media app)", 
+    "Hospital Management System", 
+    "Expense Trancker"
   ]
 }
 

@@ -94,7 +94,7 @@ body, body[data-scroll-locked] {
   background: var(--background);
   color: var(--foreground);
   font-family: 'Poppins', sans-serif;
-  padding: 0px 60px !important;
+  /* padding: 0px 60px !important; */
   overflow-x: hidden;
 }
 
@@ -111,7 +111,7 @@ body li a:hover{
 }
 
 .banner-image .banner-cover{
-  background-size: contain;
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: 0px -24px;
   width: 100%;
@@ -161,9 +161,3 @@ body li a:hover{
     @apply border-border outline-ring/50;}
   body {
     @apply bg-background text-foreground;}}
-
-@media screen and (max-width: 768px) {
-  body, body[data-scroll-locked]{
-    padding: 0px 32px !important;
-  }
-}

@@ -6,6 +6,7 @@ import Banner from '@/components/Banner'
 import { AboutSection } from '@/components/About'
 import { SkillsSection } from '@/components/SkillsSection'
 import CareerInfo from '@/components/CareerInfo'
+import { ContactSection } from '@/components/ContactSection'
 
 function index() {
   return (
@@ -15,6 +16,7 @@ function index() {
       <AboutSection />
       <SkillsSection />
       <CareerInfo />
+      <ContactSection />
     </>
     
   )

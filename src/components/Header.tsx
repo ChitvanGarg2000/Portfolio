@@ -10,7 +10,7 @@ function Header() {
   const [openNavigation, setOpenNavigation] = useState<boolean>(false);
 
   return (
-    <div className='flex flex-wrap justify-between items-center py-6 relative'>
+    <div className='flex flex-wrap justify-between items-center py-6 relative px-8 sm:py-12'>
       <IoHomeOutline size={28} className='cursor-pointer hover:text-yellow-theme' />
 
       <div className='block sm:hidden cursor-pointer z-20' onClick={() => setOpenNavigation((curr) => !curr)}>

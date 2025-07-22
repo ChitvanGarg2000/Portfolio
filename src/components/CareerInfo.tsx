@@ -2,8 +2,8 @@ import React, { ReactElement } from 'react'
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { FaBriefcase } from "react-icons/fa6";
 import { School } from "lucide-react";
-import { GrProjects } from "react-icons/gr";
 import Experience from './Experience';
+import { EducationSection } from './EducationSection';
 
 const CareerInfo = () => {
     const tabs = [{
@@ -13,14 +13,10 @@ const CareerInfo = () => {
     }, {
         name: "Education",
         icon: <School size={12}/>,
-        component: null
-    }, {
-        name: "Projects",
-        icon: <GrProjects size={12}/>,
-        component: null
+        component: <EducationSection />
     }]
     return (
-        <div className='career-section flex justify-center pt-12' id="experience">
+        <div className='career-section flex justify-center pt-12 px-8 sm:px-12' id="experience">
             <Tabs defaultValue="Experience" className="w-full">
                 <div className='flex w-full justify-center'>
                     <TabsList>

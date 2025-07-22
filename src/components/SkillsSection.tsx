@@ -32,7 +32,7 @@ export function SkillsSection() {
   };
 
   return (
-    <section id="skills" className="py-8 sm:py-20 px-4 sm:px-6 lg:px-8 bg-accent/30">
+    <section id="skills" className="py-8 sm:py-20 px-8 sm:px-12 lg:px-8 bg-accent/30">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -90,7 +90,7 @@ export function SkillsSection() {
           viewport={{ once: true }}
           className="text-center"
         >
-          <h3 className="text-xl mb-6">Technologies I Work With</h3>
+          <h3 className="text-xl mb-6">Projects I worked on</h3>
           <div className="flex flex-wrap justify-center gap-3">
             {technologies.map((tech, index) => (
               <motion.div

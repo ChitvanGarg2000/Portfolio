@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Textarea } from "@/components/ui/textarea"
+import { Send } from "lucide-react"
 import {
     Select,
     SelectContent,
@@ -135,8 +136,8 @@ const ContactForm: React.FC<ContactFormProps> = ({ isLoading, setLoading, mailEr
                 </div>
 
                 <div className="flex justify-end">
-                    <Button type="submit" className="mt-6">
-                        Send
+                    <Button type="submit" className="mt-6 hover:bg-yellow-theme">
+                        Send <Send size={14} color="#fff" />
                     </Button>
                 </div>
             </form>

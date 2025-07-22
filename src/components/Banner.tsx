@@ -78,7 +78,7 @@ function Banner() {
 
 
     return (
-        <>
+        <div className='px-8 sm:px-12'>
             <div className='flex justify-between pt-16'>
                 <div className='info w-full sm:w-1/2'>
                     <motion.div
@@ -145,8 +145,8 @@ function Banner() {
                 </div>
                 <div className='hidden w-2/5 sm:flex justify-center items-center'>
                     <div className='banner-image flex justify-center items-center'>
-                        <div className='banner-cover flex py-4'>
-                            <Image src={IMAGE_URLS.bannerImage} alt='banner-image' width={320} height={350} />
+                        <div className='banner-cover flex justify-center items-end'>
+                            <Image src={IMAGE_URLS.bannerImage} alt='banner-image' width={350} height={420} />
                         </div>
                     </div>
                 </div>
@@ -161,7 +161,7 @@ function Banner() {
             >
                 <FaChevronCircleDown size={24} className="animate-bounce hover:text-yellow-theme" />
             </motion.button>
-        </>
+        </div>
     )
 }
 
