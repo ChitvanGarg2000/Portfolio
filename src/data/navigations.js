@@ -4,7 +4,7 @@ import { RiWhatsappFill, RiInstagramFill, RiTelegramFill } from "react-icons/ri"
 const data = {
     "navigations": [
         {
-            "name": "About us",
+            "name": "About",
             "link": "#about"
         },
         {

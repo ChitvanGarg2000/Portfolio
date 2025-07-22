@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion'
 import { Button } from '@/components/ui/button'
-import { FaFileDownload } from "react-icons/fa";
+import { Download } from 'lucide-react';
 import { MdMail } from "react-icons/md";
 import navigations from '../data/navigations'
 import Link from 'next/link';
@@ -136,7 +136,7 @@ function Banner() {
                         </Dialog>
 
                         <Button className='cursor-pointer flex items-center ml-2' onClick={handleDownload}>
-                            Resume <FaFileDownload size={12} style={{ color: "#fff" }} />
+                            Resume <Download size={12} style={{ color: "#fff" }} />
                         </Button>
                     </div>
                     <div className='hidden sm:flex gap-4 items-center mt-8'>
