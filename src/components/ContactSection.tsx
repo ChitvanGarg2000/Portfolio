@@ -9,7 +9,7 @@ import { ToastContainer } from 'react-toastify';
 
 export function ContactSection() {
   const [isSubmitting, setIsSubmitting] = useState<boolean>(false);
-  const [mailError, setMailError] =  useState<string>("");
+  const [mailError, setMailError] = useState<string>("");
 
   const contactInfo = [
     {
@@ -33,14 +33,16 @@ export function ContactSection() {
   ];
 
   if (isSubmitting) {
-        return <>
-            <MailLoader type={mailError === '' ? "error" : "success"} message={mailError === '' ? "Successfully sent" : mailError} position="top-right" />
-            <ToastContainer />
-        </>
-    }
+    return (
+      <>
+        <MailLoader type={mailError === '' ? "error" : "success"} message={mailError === '' ? "Successfully sent" : mailError} position="top-right" />
+        <ToastContainer />
+      </>
+    );
+  }
 
   return (
-    <section id="contact" className="py-20 px-4 sm:px-6 lg:px-8">
+    <section id="contact" className="py-12 px-8 sm:px-12 lg:px-8 overflow-x-hidden">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -58,8 +60,8 @@ export function ContactSection() {
 
         <div className="grid lg:grid-cols-2 gap-12">
           <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
@@ -81,7 +83,7 @@ export function ContactSection() {
                     <h4 className="font-medium">{item.title}</h4>
                     <a 
                       href={item.href}
-                      className="text-muted-foreground hover:text-primary transition-colors"
+                      className="text-muted-foreground hover:text-primary transition-colors break-words"
                     >
                       {item.value}
                     </a>
@@ -109,12 +111,17 @@ export function ContactSection() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <ContactForm isLoading={isSubmitting} setLoading={setIsSubmitting} mailError={mailError} setMailError={setMailError}/>
+            <ContactForm 
+              isLoading={isSubmitting} 
+              setLoading={setIsSubmitting} 
+              mailError={mailError} 
+              setMailError={setMailError} 
+            />
           </motion.div>
         </div>
       </div>
