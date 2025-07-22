@@ -90,10 +90,34 @@ const skills = {
         }
     ],
     "technologies": [
-    "Weather Forecast App", 
-    "Connect me (Social media app)", 
-    "Hospital Management System", 
-    "Expense Trancker"
+        {
+            name: "Connect me (Social media app)",
+            link: "https://connectme-obz8.onrender.com/login"
+        },
+        {
+            name: "Hospital Management System",
+            link: "https://cliniconnect.onrender.com/"
+        },
+        {
+            name: "Multi Step Form",
+            link: "https://multi-step-form-phi-seven.vercel.app/"
+        },
+        {
+            name: "Memory Game",
+            link: "https://memory-game-js-seven.vercel.app/"
+        },
+        {
+            name: "Countries Info Application",
+            link: "https://restcountries-pi.vercel.app/"
+        },
+        {
+            name: "Weather Forecast App",
+            link: "/"
+        },
+        {
+            name: "Expense Trancker",
+            link: "/"
+        }
   ]
 }
 

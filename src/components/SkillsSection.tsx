@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { Badge } from './ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from './ui/card';
 import { Progress } from './ui/progress';
+import Link from 'next/link';
 import Skills from '../data/skills'
 
 export function SkillsSection() {
@@ -92,7 +93,7 @@ export function SkillsSection() {
         >
           <h3 className="text-xl mb-6">Projects I worked on</h3>
           <div className="flex flex-wrap justify-center gap-3">
-            {technologies.map((tech, index) => (
+            {technologies.map(({name, link}, index) => (
               <motion.div
                 key={index}
                 variants={itemVariants}
@@ -100,7 +101,9 @@ export function SkillsSection() {
                 whileTap={{ scale: 0.95 }}
               >
                 <Badge variant="secondary" className="px-4 py-2 text-sm">
-                  {tech}
+                  <Link href={link}>
+                    {name}
+                  </Link>
                 </Badge>
               </motion.div>
             ))}
